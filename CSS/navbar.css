@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (max-width: 50em) {
+    html {
+      font-size: 40%; } }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #0f2437;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.6rem 0 1.6rem 0;
+  font-weight: 600;
+  letter-spacing: 0.3px; }
+  .navbar__logo-container--text {
+    font-size: 2.4rem;
+    position: relative; }
+    .navbar__logo-container--text::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #0f2437;
+      position: absolute;
+      top: 6px; }
+      @media only screen and (max-width: 50em) {
+        .navbar__logo-container--text::after {
+          width: 4px;
+          height: 4px; } }
+  .navbar__item-container--link:link, .navbar__item-container--link:visited {
+    color: #0f2437;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__item-container--link:link, .navbar__item-container--link:visited {
+        display: none; } }
+    .navbar__item-container--link:link:active, .navbar__item-container--link:link:hover, .navbar__item-container--link:visited:active, .navbar__item-container--link:visited:hover {
+      color: #7e8f6d;
+      transition: all 0.3s; }
+    .navbar__item-container--link:link:first-child, .navbar__item-container--link:visited:first-child {
+      text-decoration: underline; }
+    .navbar__item-container--link:link:not(:last-child), .navbar__item-container--link:visited:not(:last-child) {
+      margin-right: 3rem; }
+  .navbar__item-container--logo {
+    font-size: 2.5rem;
+    color: #0f2437;
+    transform: rotate(-50deg);
+    cursor: pointer; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__item-container--logo {
+        display: none; } }
+  .navbar__contact-container {
+    display: flex;
+    align-items: center; }
+
+#navbar__contact {
+  text-decoration: none;
+  margin-right: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    #navbar__contact {
+      display: block; } }
+
+.hamburger-menu {
+  display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger-menu {
+      font-size: 2.5rem;
+      color: #0f2437;
+      display: block;
+      cursor: pointer; } }

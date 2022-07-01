@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (max-width: 50em) {
+    html {
+      font-size: 40%; } }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #0f2437;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.main {
+  padding: 10rem 14rem 12rem 14rem;
+  display: grid;
+  grid-template-columns: 30% 70%; }
+  @media only screen and (max-width: 62.5em) {
+    .main {
+      padding: 10rem 10rem 12rem 10rem; } }
+  @media only screen and (max-width: 50em) {
+    .main {
+      padding: 6rem 6rem 8rem 6rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      grid-template-columns: 1fr;
+      padding: 10rem 10rem 12rem 10rem; } }
+  .main__phone {
+    width: 160px;
+    height: 170px;
+    border: 3.5px solid #152738;
+    border-bottom: none;
+    border-top-left-radius: 1.8rem;
+    border-top-right-radius: 1.8rem;
+    position: relative; }
+    @media only screen and (max-width: 50em) {
+      .main__phone {
+        width: 120px;
+        height: 130px; } }
+    @media only screen and (max-width: 37.5em) {
+      .main__phone {
+        display: none; } }
+  .main__heading-tertiary {
+    width: 5ch;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-left: 15px; }
+    @media only screen and (max-width: 75em) {
+      .main__heading-tertiary {
+        font-size: 1.9rem;
+        padding-top: 25px; } }
+    @media only screen and (max-width: 50em) {
+      .main__heading-tertiary {
+        padding-top: 15px; } }
+  .main__green-box {
+    width: 90%;
+    height: 8rem;
+    background-color: #7e8f6d;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 10px; }
+    .main__green-box--text {
+      padding: 0 15px;
+      font-size: 1.6rem;
+      color: #f9f7f6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 400; }
+    .main__green-box--mini {
+      font-size: 1.2rem;
+      color: #b3bac0; }
+  .main__logo-box {
+    padding: 10px 15px 0 12px;
+    display: flex;
+    justify-content: space-between; }
+  .main__logo {
+    font-size: 1.4rem; }
+  .main__box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+  .main__span {
+    font-size: 1.4rem;
+    font-weight: 600; }
+  .main__link {
+    color: #0f2437;
+    font-size: 1.2rem; }
+    .main__link:hover {
+      color: #425232;
+      transition: all 0.2s; }
+  .main__text-box {
+    display: flex;
+    gap: 9rem; }
+    @media only screen and (max-width: 50em) {
+      .main__text-box {
+        gap: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .main__text-box {
+        flex-direction: column;
+        margin-bottom: 20px; } }
+  .main__text {
+    font-size: 1.6rem;
+    color: #152738;
+    font-weight: 400;
+    line-height: 1.7; }
+  .main__heading-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+  .main__heading-primary {
+    font-size: 6rem;
+    text-transform: uppercase;
+    width: 15ch;
+    letter-spacing: -1px;
+    line-height: 1.4;
+    margin-top: 1.2rem; }
+    @media only screen and (max-width: 50em) {
+      .main__heading-primary {
+        font-size: 5.2rem; } }
+    .main__heading-primary--author {
+      font-family: "Sacramento", cursive;
+      font-size: 3rem; }

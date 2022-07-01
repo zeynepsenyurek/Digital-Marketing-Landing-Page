@@ -1,0 +1,159 @@
+@import "./base.scss";
+
+.main {
+  padding: 10rem 14rem 12rem 14rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 10rem 10rem 12rem 10rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 6rem 6rem 8rem 6rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    padding: 10rem 10rem 12rem 10rem;
+  }
+
+  &__phone {
+    width: 160px;
+    height: 170px;
+    border: 3.5px solid $color-dark-3;
+    border-bottom: none;
+    border-top-left-radius: 1.8rem;
+    border-top-right-radius: 1.8rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 120px;
+      height: 130px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
+
+  &__heading-tertiary {
+    width: 5ch;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-left: 15px;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 1.9rem;
+      padding-top: 25px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      padding-top: 15px;
+    }
+  }
+
+  &__green-box {
+    width: 90%;
+    height: 8rem;
+    background-color: $color-primary;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 10px;
+
+    &--text {
+      padding: 0 15px;
+      font-size: 1.6rem;
+      color: $color-grey-light-1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 400;
+    }
+
+    &--mini {
+      font-size: 1.2rem;
+      color: $color-grey-light-2;
+    }
+  }
+
+  &__logo-box {
+    padding: 10px 15px 0 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 1.4rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__span {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  &__link {
+    color: $color-dark-1;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: $color-primary-dark;
+      transition: all 0.2s;
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    gap: 9rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      gap: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: $color-dark-3;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  &__heading-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__heading-primary {
+    font-size: 6rem;
+    text-transform: uppercase;
+    width: 15ch;
+    letter-spacing: -1px;
+    line-height: 1.4;
+    margin-top: 1.2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 5.2rem;
+    }
+
+    &--author {
+      font-family: "Sacramento", cursive;
+      font-size: 3rem;
+    }
+  }
+}

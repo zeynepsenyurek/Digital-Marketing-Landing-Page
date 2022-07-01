@@ -1,0 +1,95 @@
+@import "./base.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.6rem 0 1.6rem 0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  &__logo-container {
+    &--text {
+      font-size: 2.4rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $color-dark-1;
+        position: absolute;
+        top: 6px;
+
+        @media only screen and (max-width: $bp-medium) {
+          width: 4px;
+          height: 4px;
+        }
+      }
+    }
+  }
+
+  &__item-container {
+    &--link:link,
+    &--link:visited {
+      color: $color-dark-1;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.4rem;
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
+
+      &:active,
+      &:hover {
+        color: $color-primary;
+        transition: all 0.3s;
+      }
+
+      &:first-child {
+        text-decoration: underline;
+      }
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+
+    &--logo {
+      font-size: 2.5rem;
+      color: $color-dark-1;
+      transform: rotate(-50deg);
+      cursor: pointer;
+
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
+    }
+  }
+
+  &__contact-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+#navbar__contact {
+  text-decoration: none;
+  margin-right: 1rem;
+
+  @media only screen and (max-width: $bp-small) {
+    display: block;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2.5rem;
+    color: $color-dark-1;
+    display: block;
+    cursor: pointer;
+  }
+}
