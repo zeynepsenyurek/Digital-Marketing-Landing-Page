@@ -43,6 +43,7 @@
     font-size: 27rem;
     transform: rotate(-0.25turn);
     background: -webkit-linear-gradient(#b9c7b249, #7381641b);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 7px;
