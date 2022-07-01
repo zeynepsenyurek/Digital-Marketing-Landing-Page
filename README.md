@@ -1,3 +1,2 @@
 # Digital-Marketing-Landing-Page
-
-![screencapture-arc-design-z-netlify-app-2022-07-01-17_32_11](https://user-images.githubusercontent.com/97789864/176914737-bb352804-6981-4eed-932e-df665ac38000.jpg)
+![screencapture-arc-desgin-z-netlify-app-2022-07-01-20_47_20](https://user-images.githubusercontent.com/97789864/176945445-722650f6-7d3f-4a2a-8d2e-c3a32dcef8ae.jpg)
