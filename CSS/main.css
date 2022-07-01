@@ -45,13 +45,32 @@ body {
     border-bottom: none;
     border-top-left-radius: 1.8rem;
     border-top-right-radius: 1.8rem;
-    position: relative; }
+    position: relative;
+    background-color: #fff; }
     @media only screen and (max-width: 50em) {
       .main__phone {
         width: 120px;
         height: 130px; } }
     @media only screen and (max-width: 37.5em) {
       .main__phone {
+        display: none; } }
+  .main__heading {
+    position: absolute;
+    font-size: 27rem;
+    transform: rotate(-0.25turn);
+    background: -webkit-linear-gradient(#b9c7b249, #7381641b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    z-index: -2;
+    left: -8px; }
+    @media only screen and (max-width: 62.5em) {
+      .main__heading {
+        font-size: 24rem;
+        top: 160px; } }
+    @media only screen and (max-width: 50em) {
+      .main__heading {
         display: none; } }
   .main__heading-tertiary {
     width: 5ch;
